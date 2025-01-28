@@ -19,10 +19,10 @@ This tutorial outlines configuring Group Policy, enabling/unlocking accounts, an
 
 <h2>Steps</h2>
 
-- Install Active Directory
-- Create a Domain Admin User
-- Join a PC to My Domain and Set Up Remote Desktop For Non-Admin Users
-- Run Powershell Script to Create Additional Users
+- Login to Domain Controller
+- Configure Group Policy to Lockout After 5 Attempts
+- Pick a User and Attempt to Login 6 Times With Bad Password
+- Unlock the Account in Active Directory, Reset the User's Password, then Login 
 
 <h2>Deployment and Configuration Steps</h2>
 
@@ -30,7 +30,7 @@ This tutorial outlines configuring Group Policy, enabling/unlocking accounts, an
 <img src="https://i.imgur.com/ziLAQkg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-I first installed Active Directory Domain Services to my Windows Server VM. I then promoted the server to a domain controller, creating a new forest titled "mydomain.com". Then I restarted the machine and logged back in as a domain user.
+I logged into my Windows Server Domain Controller VM via remote desktop. Then I opened Group Policy Management Console (GPMC) and went to edit my default domain policy. I selected "computer configuration", "policies", "Windows Settings", "Security Settings", "Account Policies", "Account Lockout Policy". I set the account lockout threshold to 5 logon attempts with a 30 minute lockout duration. 
 </p>
 <br />
 
