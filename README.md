@@ -43,7 +43,11 @@ After that, I logged in as an Admin into my Client-1 Windows 10 VM as an admin. 
 <br />
 
 <p>
-<img src="https://i.imgur.com/FzBkrD4.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="914" alt="Screenshot 2025-01-28 at 10 32 11 AM" src="https://github.com/user-attachments/assets/59124433-3e93-48e6-bf5b-af54669e21ff" />
+
+![Screenshot 2025-01-28 at 10 44 11 AM](https://github.com/user-attachments/assets/bdcab14e-7305-4af0-90a4-fba28cdf8d7c)
+
+
 </p>
 <p>
 From here I went back into my Domain Controller and found the user that was locked out. I right clicked their name and hit "Reset Password". I then resest the password and unlocked their account. Lastly, I confirmed I could login to Client-1 with the new password.
