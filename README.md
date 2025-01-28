@@ -3,7 +3,7 @@
 </p>
 
 <h1>Group Policy and Managing Accounts In On-premises Active Directory Deployed in the Cloud (Azure)</h1>
-This tutorial outlines configuring Group Policy, enabling/unlocking accounts, and resetting passwords in Active Directory.<br />
+This tutorial outlines configuring Group Policy, unlocking accounts, and resetting passwords in Active Directory.<br />
 
 <h2>Environments and Technologies Used</h2>
 
@@ -22,7 +22,7 @@ This tutorial outlines configuring Group Policy, enabling/unlocking accounts, an
 - Login to Domain Controller
 - Configure Group Policy to Lockout After 5 Attempts
 - Pick a User and Attempt to Login 6 Times With Bad Password
-- Unlock the Account in Active Directory, Reset the User's Password, then Login 
+- Reset the User's Password, Unlock the Account In Active Directory, then Login 
 
 <h2>Deployment and Configuration Steps</h2>
 
@@ -46,6 +46,6 @@ After that, I logged in as an Admin into my Client-1 Windows 10 VM as an admin. 
 <img src="https://i.imgur.com/FzBkrD4.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-I then joined my Windows 10 VM, "Client 1" to my domain (mydomain.com). I previously had set Client 1's DNS settings to my Domain Controller's private IP address. After logging in as an admin, I went to Client 1's system properties and allowed domain users access to remote desktop. I then logged back into my Domain Controller as davin_admin. I subsequently ran a Powershell script as an administrator to create 10,000 accounts for the _EMPLOYEES OU. Lastly, I confirmed the functionality of the user accounts by signing in with one of them. 
+From here I went back into my Domain Controller and found the user that was locked out. I right clicked their name and hit "Reset Password". I then resest the password and unlocked their account. Lastly, I confirmed I could login to Client-1 with the new password.
 </p>
 <br />
