@@ -3,7 +3,7 @@
 </p>
 
 <h1>Group Policy and Managing Accounts In On-premises Active Directory Deployed in the Cloud (Azure)</h1>
-This tutorial outlines configuring Group Policy, enabling/unlocking accounts and resetting passwords in Active Directory.<br />
+This tutorial outlines configuring Group Policy, enabling/unlocking accounts, and resetting passwords in Active Directory.<br />
 
 <h2>Environments and Technologies Used</h2>
 
