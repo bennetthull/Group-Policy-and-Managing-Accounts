@@ -30,7 +30,7 @@ This tutorial outlines configuring Group Policy, enabling/unlocking accounts, an
 <img width="912" alt="Screenshot 2025-01-28 at 9 56 53 AM" src="https://github.com/user-attachments/assets/aecbc091-4971-4a2c-8545-4c3e24f41970" />
 </p>
 <p>
-I logged into my Windows Server Domain Controller VM via remote desktop. Then I opened Group Policy Management Console (GPMC) and went to edit my default domain policy. I selected "computer configuration", "policies", "Windows Settings", "Security Settings", "Account Policies", "Account Lockout Policy". I set the account lockout threshold to 5 logon attempts with a 30 minute lockout duration. 
+I logged into my Windows Server Domain Controller VM via remote desktop. Then I opened Group Policy Management Console (GPMC) and went to edit my default domain policy. I selected "computer configuration", "policies", "Windows Settings", "Security Settings", "Account Policies", "Account Lockout Policy". I set the account lockout threshold to 5 invalid logon attempts with a 30 minute lockout duration. 
 </p>
 <br />
 
