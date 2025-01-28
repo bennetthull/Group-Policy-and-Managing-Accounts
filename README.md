@@ -35,10 +35,10 @@ I logged into my Windows Server Domain Controller VM via remote desktop. Then I 
 <br />
 
 <p>
-<img src="https://i.imgur.com/AiZ5cQq.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+<img width="1436" alt="Screenshot 2025-01-28 at 10 09 20 AM" src="https://github.com/user-attachments/assets/d9599025-f67a-4548-9cb1-f6d9bcd58827" />
+<img width="263" alt="Screenshot 2025-01-28 at 10 17 25 AM" src="https://github.com/user-attachments/assets/5fef408e-392d-447e-8be5-cd3267420450" />
 <p>
-After that, I logged in as an Admin into my Client-1 Windows 10 VM as an admin. Rather than wait the 90 minutes for the group policy to take effect, I ran the command "gpupdate /force" to enable it immediately. I then selected one of the users I generated in a previous project from a Powershell script and attempted to login to Client-1 six times with a bad password. 
+After that, I logged in as an Admin into my Client-1 Windows 10 VM as an admin. Rather than wait the 90 minutes for the group policy to take effect, I ran the command "gpupdate /force" to enable it immediately. I then selected one of the users I generated in a previous project from a Powershell script and attempted to login to Client-1 six times with a bad password. On the 6th time, remote desktop gave me a message explaining the account has been locked out.
 </p>
 <br />
 
